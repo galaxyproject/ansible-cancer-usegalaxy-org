@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# vault plaintext
+group_vars/all/vaultview.yml
+
+#roles
+collections/*
