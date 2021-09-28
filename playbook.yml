@@ -1,0 +1,8 @@
+- name: Run the cloudman-boot Playbook
+  import_playbook: 'collections/ansible_collections/cloudman/boot/playbook.yml'
+
+- name: Run Galaxy role
+  hosts: controllers[0]
+  roles:
+    - role: galaxy
+  tags: [galaxy]

@@ -1,0 +1,4 @@
+collections:
+  - name: https://github.com/CloudVE/cloudman-boot.git#
+    type: git
+    version: master
