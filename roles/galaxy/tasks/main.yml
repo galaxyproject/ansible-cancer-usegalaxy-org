@@ -1,0 +1,7 @@
+- name: Deploy latest Galaxy chart
+  community.kubernetes.helm:
+    name: cancer-galaxy
+    chart_ref: galaxyproject/galaxy
+    release_namespace: galaxy
+    create_namespace: true
+    values: "{{ lookup('template', 'galaxy_values.yml.j2') | from_yaml }}"
